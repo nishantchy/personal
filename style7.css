@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.side-img img{
+    position: absolute;
+}
+
+.main-card img{
+    position: relative;
+    transform: translate(155px, 209px);
+}
+
+.main-card2 img{
+    position: relative;
+    transform: translate(271px, 262px);
+}
+
+.main-card img{
+    position: relative;
+}
+
+.inside-card{
+    position: absolute;
+}
+.inside-card img{
+    position: absolute;
+    transform: translate(191px, -15px);
+}
+.number h2{
+    transform: translate(186px, 92px);
+    color: #fff;
+}
+
+.felicia{
+    display: flex;
+    justify-content: space-between;
+    transform: translate(190px, 114px);
+    color: #fff;
+}
+
+.felicia span h4{
+    margin-left: 50px;
+}
+.in-fel h4{
+    margin-left: 228px;
+}
+
+.main-card2 img{
+    position: relative;
+}
+
+.in-card2{
+    position: absolute;
+    transform: translate(626px, 123px);
+    color: #fff;
+}
+
+.right-section{
+    padding: 15rem 25rem;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+#name{
+    padding: 7px 20px;
+    border-radius: 0.5rem;
+}
+#num{
+    padding: 7px 20px;
+    border-radius: 0.5rem;
+}
+
+#exp{
+    padding: 7px 20px;
+    border-radius: 0.5rem;
+}
+.cardnum small{
+    color: red;
+}
+.date{
+    display: flex;
+    gap: 30px;
+}
+.date small{
+    color: red;
+}
+.cvc small{
+    color: red;
+}
+#cvc{
+    padding: 7px 20px;
+    border-radius: 0.5rem;
+}
+.cardnum{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Date{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.cvc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.btn{
+    margin-top: 30px;
+}
+
+button{
+    padding: 9px 170px;
+    border-radius: 0.5rem;
+    background-color: #220930;
+    color: #fff;
+}

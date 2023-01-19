@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+.balance{
+    color: #ffebe1;
+}
+.img-section{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a09b95;
+}
+.box1{
+    width: 40px;
+    height: 30px;
+    background-color: #ec755d;
+    border: 0;
+    margin-top: 50px;
+    border-radius: 0.2rem;
+}
+.box2{
+    width: 40px;
+    height: 50px;
+    background-color: #ec755d;
+    border: 0;
+    margin-top: 30px;
+    border-radius: 0.2rem;
+}
+.box3{
+    width: 40px;
+    height: 70px;
+    background-color: #b4dfe5;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 0.2rem;
+}
+.box4{
+    width: 40px;
+    height: 47px;
+    background-color: #ec755d;
+    border: 0;
+    margin-top: 32px;
+    border-radius: 0.2rem;
+}
+.box5{
+    width: 40px;
+    height: 40px;
+    background-color: #ec755d;
+    border: 0;
+    margin-top: 40px;
+    border-radius: 0.2rem;
+}
+.box6{
+    width: 40px;
+    height: 60px;
+    background-color: #ec755d;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 0.2rem;
+}
+.box7{
+    width: 40px;
+    height: 42px;
+    background-color: #ec755d;
+    border: 0;
+    margin-top: 38px;
+    border-radius: 0.2rem;
+}
+.first-cont{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+   
+}
+.nav{
+    display: flex;
+    gap: 200px;
+    background-color: #ec755d;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+}
+
+.sec-cont{
+    background-color: #fffcf7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 560px;
+    border-radius: 0.5rem;
+}
+
+.txt{
+    padding: 10px 0;
+
+}
+
+.foot{
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.right{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.day{
+    color: #a09b95;
+}
+
+.left h6{
+    color: #a09b95;
+}
+
+.right h6{
+    color: #a09b95;
+}
+
+.background{
+    background-color: #f7e9dc;
+    height: 100vh;
+}

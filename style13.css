@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.first-container{
+    display: flex;
+    gap: 30%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+ul{
+    display: flex;
+    gap: 30px;
+}
+
+li{
+    list-style: none;
+    padding-top: 50px;
+    color: #545454;
+}
+.main-container{
+    margin: auto;
+    width: 90%;
+}
+.hamburger{
+    display: none;
+}
+button {
+    border: 0;
+    background-color: #372865;
+    padding: 10px;
+    border-radius: 0.3rem;
+    
+   
+}
+.logo{
+    padding: 50px 0;
+}
+
+.btn1{
+    padding-top: 45px;
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sec-container{
+    display: flex;
+    /* margin-left: 90px; */
+    justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.left{
+    width: 50%;
+}
+.right img{
+    width: 300px;
+    margin-right: 300px;
+}
+
+.head h1{
+    padding: 20px 0;
+    font-size: 45px;
+    color: #353252;
+}
+
+.head p{
+    width: 90%;
+}
+.btn2 button{
+    border-radius: 2rem;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.btn2 a{
+    color: #fff;
+}
+
+#email{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0.3rem;
+    padding-right: 150px;
+    font-family: 'Nunito Sans', sans-serif;
+    border: 1px solid #e3e3e3;
+    
+}
+.form{
+    padding-top: 20px;
+}
+
+#btn3 button{
+    color: #fff;
+}
+
+.footer{
+    margin-left: 90px;
+    padding: 50px 0;
+}
+
+.companies{
+    display: flex;
+    gap: 20px;
+    padding-top: 12px;
+}
+
+.footer p{
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media only screen and (max-width: 620px) {
+   .nav .item{
+    display: none;
+   }
+   .hamburger{
+    display: block;
+    padding-top: 60px;
+    padding-left: 15px;
+   }
+   .btn2 button{
+    width: 190%;
+    margin-left: 10px;
+   }
+
+   .right{
+    display: none;
+   }
+   .head h1{
+    font-size: 30px;
+    /* margin-left: 5px; */
+    text-align: center;
+    width: 200%;
+    font-weight: bolder;
+   }
+   .head p{
+    width: 200%;
+    font-size: 15px;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+   }
+
+   #email{
+    padding-right: 90px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 18px;
+   }
+   label button{
+    margin-left: 18px;
+    margin-top: 12px;
+   }
+
+   #btn3 button{
+    padding: 5px 105px;
+   }
+   .footer{
+    margin-left: 18px;
+   }
+
+   .companies{
+    display: flex;
+    flex-wrap: wrap;
+   }
+}

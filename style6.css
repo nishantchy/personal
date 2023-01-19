@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.logo img{
+    width: 140px;
+}
+.right-nav{
+    display: flex;
+    gap: 30px;
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+}
+
+.features{
+    display: flex;
+    margin-top: 12px;
+}
+.features ul{
+    display: flex;
+    gap: 25px;
+    font-weight: bolder;
+    font-family: 'Sora', sans-serif;
+}
+
+.logo{
+    padding-right: 25px;
+}
+.features li{
+    list-style: none;
+    font-size: 20px;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 10px 10px;
+}
+
+.login{
+    margin-top: 10px;
+}
+
+.main-content{
+    display: flex;
+}
+
+.remote{
+    padding: 70px 80px;
+    font-family: 'Sora', sans-serif;
+}
+
+.remote h1{
+    font-size: 90px;
+    font-family: 'Epilogue', sans-serif;
+    padding-top: 70px;
+}
+
+.remote p{
+    padding-top: 60px;
+    color: hsl(0, 0%, 41%);
+    font-size: 25px;
+    width: 80%;
+}
+
+.img-section{
+    padding-top: 50px;
+}
+.img-section img{
+    width: 120px;
+    margin-right: 35px;
+}
+
+.right-img{
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+.btn{
+    padding-top: 40px;
+}
+
+
+.right-img img{
+    width: 600px;
+    height: 589px;
+    transform: translate(-98px, 10px);
+}
