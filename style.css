@@ -410,23 +410,231 @@ footer{
         font-size: 12px;
     }
 }
-@media(max-width:420px){
-    .cont h2{
-        font-size: 15px;
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+        margin-right: 550px;
     }
-    .fa-html{
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 40px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(46, 43, 43);
+        width: 50%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .nav {
+        width: 100%;
+    }
+
+    .below-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact {
+        display: flex;
         flex-direction: column;
     }
-    .fa-java{
+
+    .form {
+        width: 100%;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .Message {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #b {
+        width: 87%;
+    }
+
+    #bc {
+        width: 87%;
+    }
+
+    .Name {
+        display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
     }
-    .Javascript{
-        width: auto;
+
+    .intro-section h1 {
+        width: 90%;
+        margin-left: 10px;
+        font-size: 30px;
     }
-    .php h3{
-        padding-top: 1px;
+
+    .me p {
+        margin-top: 22px;
+        font-size: 16px;
+        margin-right: 7px;
     }
-    button{
-        color: #fff;
+
+    .php {
+        width: 87%;
     }
+
+    .Javascript {
+        width: 87%;
+    }
+
+    .Email {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #btn {
+        padding: 9px 30px;
+        border: 0;
+        background-color: #000;
+        border-radius: 0.5rem;
+        color: aliceblue;
+        font-weight: bold;
+    }
+
+    .fa-html {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .img-section img {
+        width: 350px;
+        border: 0;
+        border-radius: 50%;
+        padding-top: 1.5rem;
+    }
+
+    .intro-section {
+        text-align: center;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 22px;
+        margin-left: -77px; */
+        justify-content: center;
+        margin-top: 40px;
+        padding: 0 3%;
+    }
+
+    .cont .courses,
+    .education,
+    .expertise {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .fa-java {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h3 {
+        margin-top: 19px;
+    }
+
+
+    .html {
+        border: 0px solid #000;
+        border-radius: 0.5rem;
+        box-shadow: rgb(0 0 0 / 44%) 0px 3px 8px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .html p,
+    .css p {
+        line-height: 1.5;
+        margin-top: 21px;
+    }
+
+    .Javascript p,
+    .php p {
+        line-height: 1.5;
+        margin-top: 21px;
+    }
+
+
 }
