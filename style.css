@@ -8,10 +8,18 @@
 html{
     scroll-behavior: smooth;
 }
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+.dark-theme{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
 /* Navbar */
 nav ul li a{
     text-decoration: none;
-    color: aliceblue;
+    color: #fff;
     font-size: large;
 }
 nav ul{
@@ -23,8 +31,23 @@ nav ul li{
     list-style: none;
 }
 nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1.5rem;
     background-color: rgb(46, 43, 43);   
+}
+.nav-item a:hover{
+    color: yellowgreen;
+    transition: 1s;
+}
+
+.theme{
+    margin-left: 5rem;
+}
+.theme img{
+    width: 30px;
+    height: 30px;
 }
 
 /* below navbar */
@@ -39,8 +62,10 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     gap: 1rem;
-    
+    padding-bottom: 3.2rem;
 }
 .intro-section{
     text-align: center;
@@ -58,27 +83,31 @@ nav{
     text-decoration: none;
     font-size: 20px;
     padding: 14px;
-    color: aliceblue;
+    color: var(--secondary-color);
 }
 .intro-section button{
     /* margin-left: 105px; */
     margin-top: 2em;
     border-radius: 0.5rem;
-    background-color: #000;
+    background-color: var(--primary-color);
+}
+.intro-section button a:hover{
+    color: yellowgreen;
+    transition: 1s;
 }
 /* about me */
 .about{
-    background-color: #000;
-    color: aliceblue;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .me{
     align-items: center;
     text-align: center;
 }
 .me h1{
-    padding-top: 40px;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    padding-top: 10px;
+    /* margin-top: 40px; */
+    margin-bottom: 50px;
 }
 .btn button{
     margin-top: 30px;
@@ -89,8 +118,8 @@ nav{
     text-decoration: none;
     padding: 5px 20px;
     border: 0;
-    background-color: #fff;
-    color: black;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: bold;
     border-radius: 0.5rem;
     margin-top: 20px;
@@ -104,7 +133,7 @@ nav{
 .cont .courses, .education, .expertise{
     width: 50%;
     padding: 15px;
-    border: 1px solid aliceblue;
+    border: 1px solid var(--secondary-color);;
 }
 .about{
     padding-bottom: 40px;
@@ -118,7 +147,9 @@ nav{
 /* skills */
 .skills{
     text-align: center;
-    margin: 2em;
+    padding: 2em 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 .skills h1{
     margin: 2rem;
@@ -137,7 +168,9 @@ nav{
     margin-top: 2rem;
 }
 .html{
-    border: 0px solid #000;
+    border: 0px solid var(--secondary-color);
+    background-color: var(--secondary-color); 
+    color: var(--primary-color); 
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
     padding: 2rem;
@@ -146,7 +179,9 @@ nav{
     width: 90%;
 }
 .css{
-    border: 0px solid #000;
+    border: 0px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
     padding: 2rem;
@@ -155,7 +190,9 @@ nav{
     width: 90%;
 }
 .Javascript{
-    border: 0px solid #000;
+    border: 0px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
     padding: 2rem;
@@ -164,7 +201,9 @@ nav{
     width: 80%;
 }
 .php{
-    border: 0px solid #000;
+    border: 0px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
     padding: 2rem;
@@ -173,13 +212,14 @@ nav{
 }
 /* MY WORK */
 .work{
-    background-color: #000;
-    color: aliceblue;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding-bottom: 4rem;
 }
 .wrk-img img{
     height: 250px;
     width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
 }
 
 .first{
@@ -207,8 +247,8 @@ nav{
     margin: 30px 0;
 }
 .contact-info{
-    background-color: #fff;
-    color: #000;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding-bottom: 2rem;
 }
 .contact{
@@ -216,7 +256,7 @@ nav{
     display: flex;
     justify-content: center;
     
-    color: aliceblue;
+    color: var(--secondary-color);
 }
 
 .mail{
@@ -224,7 +264,7 @@ nav{
     flex-direction: column;
     gap: 20px;
     padding-bottom: 50px;
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid var(--secondary-color);
     
 }
 .phone{
@@ -232,14 +272,14 @@ nav{
     flex-direction: column;
     gap: 20px;
     padding-bottom: 50px;
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid var(--secondary-color);
 }
 .address{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-bottom: 50px;
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid var(--secondary-color);
 }
 .socials{
     display: flex;
@@ -254,12 +294,15 @@ nav{
     gap: 10px;
 }
 .info{
-    border: 1px solid #000;
+    border: 1px solid var(--primary-color);
     padding: 20px;
-    background-color: #000;
+    background-color: var(--primary-color);
 }
 .icon img{
     height: 40px;
+}
+#fb{
+    height: 42px;
 }
 .fa-info {
     font-size: large;
@@ -270,11 +313,12 @@ nav{
     text-align: center;
 }
 .form{
-    border: 1px solid #000;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
     display: flex;
     justify-content: center;
     padding: 20px;
-    color: #000;
+    /* color: var(--primary-color); */
 }
 .Name{
     display: flex;
@@ -313,7 +357,7 @@ nav{
     border: 0;
     background-color: #000;
     border-radius: 0.5rem;
-    color: aliceblue;
+    color: #fff;
     font-weight: bold;
 }
 footer{
@@ -331,7 +375,7 @@ footer{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: aliceblue;
+    background-color: #fff;
 }
 
 @media(max-width:768px){
@@ -521,9 +565,9 @@ footer{
     #btn {
         padding: 9px 30px;
         border: 0;
-        background-color: #000;
+        background-color: var(--primary-color);
         border-radius: 0.5rem;
-        color: aliceblue;
+        color: var(--secondary-color);
         font-weight: bold;
     }
 
@@ -574,7 +618,7 @@ footer{
 
 
     .html {
-        border: 0px solid #000;
+        border: 0px solid var(--primary-color);
         border-radius: 0.5rem;
         box-shadow: rgb(0 0 0 / 44%) 0px 3px 8px;
         padding: 2rem;

@@ -9,3 +9,13 @@ document.querySelectorAll("a").forEach(n=> n.addEventListener("click",() =>{
     navMenu.classList.remove("active");
 }))
 
+var iconClick = document.getElementById("icon");
+iconClick.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        iconClick.src = "/assets/sun.svg";
+    }
+        else{
+            iconClick.src = "/assets/moon.svg";
+        }
+}
